@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.custom-list li::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #61DAFB; /* Replace with your desired color */
+    margin-right: 8px; /* Adjust spacing as needed */
+}
+
+.btn-container {
+    @apply relative w-12 rounded-full h-6 cursor-pointer;
+}
+
+.dark {
+    @apply bg-gray-700 text-white ;
+}
+
+.circle {
+    @apply absolute w-5 h-5 rounded-full duration-300;
+}
+  
+.main-container {
+    position: relative;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+  
